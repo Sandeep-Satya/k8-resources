@@ -9,10 +9,8 @@ metadata:
 spec:
   containers:
     - name: nginx
-      image: nginx:latest
-      ports:
-        - containerPort: 80
-    - name: redis
-      image: redis:latest
-      ports:
-        - containerPort: 6379
+      image: nginx
+    - name: almalinux
+      image: almalinux:9
+      command: ["sleep", "1000"]
+     
